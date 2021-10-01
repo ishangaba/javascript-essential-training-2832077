@@ -1,0 +1,2 @@
+Solution to the placement of Javascript before or after the data rendering.
+ASYNC AND DEFER
