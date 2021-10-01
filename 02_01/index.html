@@ -43,7 +43,12 @@
     </main>
 
     <script>
-      const allCode = document.querySelectorAll("code");
+      /*
+      Script is always kept at the end of the dociment because javascript is making changes 
+      to the renedered data by the browser. Browser stops the rendering as soon as it encounters 
+      the javascript.
+      */
+      const allCode = document.querySelectorAll("code"); //Looking for code elements
 
       for (let item of allCode) {
         item.innerHTML = `&lt;${item.innerHTML}&gt;`;

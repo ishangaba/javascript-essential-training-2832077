@@ -7,12 +7,21 @@
 /* Multi-line comment
 See! this line is also commented out! */
 
+/**
+ * function ypdate backpack()
+ * outputs HTML
+ * @param {string} update
+ */
+
 const updateBackpack = (update) => {
   let main = document.querySelector("main"); // main is an element
   main.innerHTML = markup(backpack);
   console.info(update);
 };
-
+//Comments and spaces in Javascript
+//Command + / to comment multiple lines at one.
+//Spaces at the bottom can change the default of spaces.
+//"" or '' depends on developer and the tools will figure it out.
 const backpack = {
   name: "Everyday Backpack",
   volume: 30,
